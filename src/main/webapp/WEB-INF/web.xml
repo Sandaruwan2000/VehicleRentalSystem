@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>VehicleRentalSystem</display-name>
+  
+  <servlet>
+  <servlet-name>Register</servlet-name>
+  <servlet-class>loging.Registerservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>loging.loging</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>View</servlet-name>
+  <servlet-class>loging.viewservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>View</servlet-name>
+  <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Data</servlet-name>
+  <servlet-class>loging.Accountservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Data</servlet-name>
+  <url-pattern>/data</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>loging.updateservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  
+   <servlet>
+  <servlet-name>NewPassword</servlet-name>
+  <servlet-class>loging.newpasswordservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>NewPassword</servlet-name>
+  <url-pattern>/change</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>Search</servlet-name>
+  <servlet-class>loging.searchservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Search</servlet-name>
+  <url-pattern>/enter</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>loging.deleteservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
